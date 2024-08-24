@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .intro-container {
     display: flex;
     flex-direction: column;
