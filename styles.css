@@ -14,14 +14,14 @@
 /* Create two equal columns that floats next to each other */
 .column-left {
     float: left;
-    width: 40%;
+    width: 48%;
     padding-left: 8%;
     padding-right: 0%;
 }
 
 .column-right {
     float: left;
-    width: 40%;
+    width: 50%;
     padding-right: 8%;
     padding-left: 0%;
 }
@@ -108,6 +108,7 @@ em {
     height: 100vh; /* Full viewport height */
     overflow: hidden; /* Prevents scrolling issues */
     justify-content: space-between;
+    flex-direction: row;
 }
 
 /* Sidebar styling */
@@ -194,5 +195,85 @@ li {
 
     #tabContent {
         padding: 10px; /* Adjust padding to reduce height */
+    }
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .column-left, .column-right {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .intro-container {
+        padding: 10px; /* Add padding for better readability */
+    }
+
+    .column-left img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin-top: 15px;
+    }
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        height: auto; /* Let the height adjust based on content */
+    }
+
+    #sidebar {
+        width: 100%;
+        height: auto; /* Adjust height for content */
+        border-right: none; /* Remove right border */
+        border-bottom: 2px solid teal; /* Add bottom border */
+        padding-bottom: 15px;
+    }
+
+    #tabContent {
+        width: 100%;
+        padding: 5%;
+        margin-top: 10px;
+    }
+
+    #sidebar ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #sidebar ul li {
+        width: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p, ul, li {
+        font-size: 1em;
     }
 }
