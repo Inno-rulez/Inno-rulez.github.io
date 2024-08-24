@@ -57,15 +57,15 @@ em {
 
 /* Container for the sidebar and content */
 #container {
-    align-items: flex-start;
     display: flex;
-    height: 100%; /* Full viewport height */
+    height: 100vh; /* Full viewport height */
     overflow: hidden; /* Prevents scrolling issues */
 }
 
 /* Sidebar styling */
 #sidebar {
-    width: 250px; 
+    width: 20%; 
+    height: 100%;
     padding-top: 0%;
     background-color: khaki;
     border-right: 3px solid orange;
@@ -110,7 +110,7 @@ li {
     flex-grow: 1;  /* Allow this to take the remaining space */
     padding-left: 20px;
     padding-right: 12%;
-    width: auto;
+    width: 75%;
     overflow-y: scroll;
     background-color: khaki;
 }
