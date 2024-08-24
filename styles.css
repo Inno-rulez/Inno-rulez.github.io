@@ -1,0 +1,134 @@
+body {
+    background-color: khaki;
+    margin: 10px;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+em {
+    margin: 0%;
+    padding: 0;
+}
+
+#profileImage {
+    border-radius: 50%;
+}
+
+#Header {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#profileContainer {
+    display: flex;
+    align-items: center; /* Vertically align the text with the image */
+}
+
+#headerText {
+    margin-left: 20px; /* Space between the image and the text */
+}
+
+#Header p {
+    margin: 0;
+}
+
+#expandedImageContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    text-align: center;
+}
+
+#expandedImage {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10%;
+    border-radius: 0;
+}
+
+/* Container for the sidebar and content */
+#container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents scrolling issues */
+}
+
+/* Sidebar styling */
+#sidebar {
+    width: 250px; 
+    padding-top: 0%;
+    background-color: khaki;
+    border-right: 3px solid orange;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tabs styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    height: 100%;
+}
+
+li {
+    padding: 12px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, border-left-color 0.3s;
+    width: 100%; /* Ensure tabs fill the entire sidebar width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#sidebar ul li:hover {
+    background-color: orangered;
+}
+
+#sidebar ul li.active {
+    background-color: darkorange;
+    border-left-color: orangered;
+}
+
+/* Content styling */
+#tabContent {
+    flex-grow: 1;  /* Allow this to take the remaining space */
+    padding-left: 20px;
+    padding-right: 12%;
+    width: 80%;
+    overflow-y: scroll;
+    background-color: khaki;
+}
+
+.tab-pane {
+    display: none;
+    padding: 20px;
+    width: 100%;
+    text-align: justify;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.about-columns {
+    display: flex;
+}
+
+.about-column {
+    flex: 1;
+}
