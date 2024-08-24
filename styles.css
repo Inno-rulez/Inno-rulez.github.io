@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-}  
+}
 
 .intro-container {
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color:#060a14; /* Match the color scheme */
+    background-color:transparent; /* Match the color scheme */
 }
 
 /* Create two equal columns that floats next to each other */
@@ -43,7 +43,8 @@
 }
 
 body {
-    background-color: #060a14;
+    background-image: url("Images/background.jpg");
+    background-size: cover;
     color: antiquewhite;
     margin: 2%;
     padding: 0;
@@ -51,6 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: large;
+    overflow: scroll;
 }
 
 em {
@@ -113,7 +115,7 @@ em {
     width: 20%; 
     height: 100%;
     padding-top: 0%;
-    background-color: #060a14;
+    background-color: transparent;
     border-right: 4px solid teal;
     box-sizing: border-box;
     display: flex;
@@ -153,13 +155,17 @@ li {
 /* Content styling */
 #tabContent {
     flex-grow: 0;  /* Allow this to take the remaining space */
-    padding-left: 2%;
+    padding-left: 0%;
     padding-right: 12%;
     width: 75%;
     overflow-y: scroll;
     color: bisque;
-    background-image: url("Images/background.jpg");
-    background-size: cover;
+    background-color: transparent;
+}
+
+#tabContent li {
+    padding-top: 0%;
+    padding-bottom: 1%;
 }
 
 .tab-pane {
