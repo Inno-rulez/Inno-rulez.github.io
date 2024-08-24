@@ -54,3 +54,13 @@ function toggle_visibility(id) {
     else
        e.style.display = 'block';
 }
+
+function showMainContent() {
+    document.getElementById('intro').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+}
+
+function showIntro() {
+    document.getElementById('intro').style.display = 'block';
+    document.getElementById('main-content').style.display = 'none';
+}

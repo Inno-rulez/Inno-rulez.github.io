@@ -1,3 +1,20 @@
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3e2d4; /* Match the color scheme */
+}
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e2a76f; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 body {
     background-color: khaki;
     margin: 2%;
@@ -108,7 +125,7 @@ li {
 
 /* Content styling */
 #tabContent {
-    flex-grow: 1;  /* Allow this to take the remaining space */
+    flex-grow: 0;  /* Allow this to take the remaining space */
     padding-left: 2%;
     padding-right: 12%;
     width: 75%;
