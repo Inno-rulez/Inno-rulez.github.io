@@ -1,6 +1,6 @@
 body {
     background-color: khaki;
-    margin: 10px;
+    margin: 2%;
     padding: 0;
     height: 100%;
     display: flex;
@@ -18,7 +18,7 @@ em {
 }
 
 #Header {
-    padding: 30px;
+    padding: 2%;
     display: flex;
     align-items: center;
 }
@@ -29,7 +29,7 @@ em {
 }
 
 #headerText {
-    margin-left: 20px; /* Space between the image and the text */
+    margin-left: 5%; /* Space between the image and the text */
 }
 
 #Header p {
@@ -49,8 +49,8 @@ em {
 }
 
 #expandedImage {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 80%;
+    max-height: 60%;
     margin-top: 10%;
     border-radius: 0;
 }
@@ -60,6 +60,7 @@ em {
     display: flex;
     height: 100vh; /* Full viewport height */
     overflow: hidden; /* Prevents scrolling issues */
+    justify-content: space-between;
 }
 
 /* Sidebar styling */
@@ -86,9 +87,9 @@ ul {
 }
 
 li {
-    padding: 12px;
+    padding: 4%;
     cursor: pointer;
-    border-left: 4px solid transparent;
+    border-left: 2% solid transparent;
     display: flex;
     align-items: center;
     transition: background-color 0.3s, border-left-color 0.3s;
@@ -108,7 +109,7 @@ li {
 /* Content styling */
 #tabContent {
     flex-grow: 1;  /* Allow this to take the remaining space */
-    padding-left: 20px;
+    padding-left: 2%;
     padding-right: 12%;
     width: 75%;
     overflow-y: scroll;
@@ -117,7 +118,7 @@ li {
 
 .tab-pane {
     display: none;
-    padding: 20px;
+    padding: 5%;
     width: auto;
     text-align: justify;
 }
