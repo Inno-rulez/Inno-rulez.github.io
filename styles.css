@@ -57,8 +57,9 @@ em {
 
 /* Container for the sidebar and content */
 #container {
+    align-items: flex-start;
     display: flex;
-    height: 100vh; /* Full viewport height */
+    height: 100%; /* Full viewport height */
     overflow: hidden; /* Prevents scrolling issues */
 }
 
@@ -131,4 +132,14 @@ li {
 
 .about-column {
     flex: 1;
+}
+
+@media (max-width: 600px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #tabContent {
+        padding: 10px; /* Adjust padding to reduce height */
+    }
 }
